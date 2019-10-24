@@ -1,30 +1,29 @@
-<!-- https://vuejsexamples.net --> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>//vuejsexamples.net</title>
+    <title>Treinamento Vue.js</title>
     <!-- include vue -->
-    <script src="https://unpkg.com/vue"></script>       
+    <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
     <!-- page content -->
     <div id="app">
       <div v-if="show">
-      Show is set to true, div visible.
+      Mostrando true, div visivel.
       </div>
-      The variable show is set to {{show}}
+      A váriavel está {{show}}
     </div>
 
   <script>
   new Vue({
     el: '#app',
-   
+
     data: {
         show: true
     }
-  });     
+  });
   </script>
-  </body> 
+  </body>
 </html>
- 
+

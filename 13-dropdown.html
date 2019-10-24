@@ -1,12 +1,11 @@
-<!-- https://vuejsexamples.net -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>//vuejsexamples.net</title>
+    <title>Treinamento Vue.js</title>
     <!-- include vue -->
     <script src="https://unpkg.com/vue"></script>
-    
+
   </head>
   <body>
     <div id="app">
@@ -15,19 +14,19 @@
       <option v-for="option in color.options" :value="option">
       {{option}}
       </option>
-    </select>         
-    </div>    
+    </select>
+    </div>
   </body>
   <script>
   console.clear()
-   
+
   const colors = [
     {
       options:["red", "yellow", "green"],
       selectedOption: "yellow"
     }
   ]
-   
+
   new Vue({
     el:"#app",
     data:{
