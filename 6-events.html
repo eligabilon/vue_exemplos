@@ -1,0 +1,29 @@
+<!-- https://vuejsexamples.net -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>https://vuejsexamples.net</title>
+    <!-- include vue -->
+    <script src="https://unpkg.com/vue"></script>       
+  </head>
+  <body>
+    <div id="app">
+       <p>{{ message }}</p>
+       <input v-on:keydown="key"></input>
+    </div>
+  </body>
+  <script>
+  new Vue({
+    el: '#app',
+    data: {
+        message: 'vuejs model'
+    },
+    methods: {
+        key: function(event) {
+            this.message = 'key ' + event.key + ' (' + event.keyCode + ')';
+        }
+    }
+  });
+  </script>
+</html>
